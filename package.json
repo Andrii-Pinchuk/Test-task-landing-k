@@ -1,0 +1,27 @@
+{
+  "name": "test-task-landing-k",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx htmlhint \"**/*.html\" && npx stylelint \"**/*.css\" && npx stylelint \"**/*.scss\" && npx eslint \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrii-Pinchuk/Test-task-landing-k.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrii-Pinchuk/Test-task-landing-k/issues"
+  },
+  "homepage": "https://github.com/Andrii-Pinchuk/Test-task-landing-k#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "htmlhint": "^0.15.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}
