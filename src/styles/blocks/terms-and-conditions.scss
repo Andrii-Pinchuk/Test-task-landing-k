@@ -1,0 +1,23 @@
+.terms-and-conditions {
+  &__description {
+    margin-top: 10px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    padding-left: 6px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &--underline {
+      font-weight: 700;
+      text-decoration: underline 2px;
+    }
+
+    &--no-indent {
+      margin-top: 0;
+    }
+  }
+}

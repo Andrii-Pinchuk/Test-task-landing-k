@@ -3,7 +3,10 @@
     "stylelint-config-standard",
     "stylelint-config-sass-guidelines"
   ],
+  "ignoreFiles": ["src/styles/styles.css"],
   "rules": {
-    "color-named": null
+    "max-nesting-depth": null,
+    "order/properties-alphabetical-order": null,
+    "declaration-empty-line-before": null
   }
 }

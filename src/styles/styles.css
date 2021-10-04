@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "MazzardH";
+  src: url("../fonts/MazzardSoftM-ExtraBold.otf");
+}
+@font-face {
+  font-family: "Generis Sans";
+  src: url("../fonts/MazzardSoftM-ExtraBold.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+u {
+  font-size: 800;
+}
+
+.header {
+  margin: 0;
+}
+.header__container {
+  height: 150px;
+  display: flex;
+}
+.header__left-side-block {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+  background-color: #0fa094;
+}
+.header__title {
+  display: block;
+  margin: 20px auto 0;
+  max-width: 400px;
+  font-family: "MazzardH", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .header__title {
+    max-width: none;
+    margin-top: 90px;
+  }
+}
+.header__title--secondary {
+  font-size: 30px;
+}
+.header__right-side-block {
+  width: 150px;
+  text-align: center;
+  background-color: #d6f9c8;
+}
+.header__bottom-block {
+  height: 16px;
+  background-color: #e81733;
+}
+
+.page__main-content, .page__footer {
+  margin: 0 20px;
+}
+@media (min-width: 768px) {
+  .page__main-content, .page__footer {
+    margin: 0 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .page__main-content, .page__footer {
+    margin: 0 50px;
+  }
+}
+
+.main-content__equipment-info, .main-content__rental-info {
+  margin-top: 30px;
+}
+.main-content__general-info, .main-content__terms-and-conditions {
+  margin-top: 20px;
+}
+
+.general-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .general-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.general-info__section {
+  flex-grow: 1;
+}
+.general-info__section:nth-child(2) {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .general-info__section:nth-child(2) {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+
+.info {
+  color: #fff;
+  background: linear-gradient(to right, #0fa094, #0fa094 50%, #fff 100%);
+}
+.info__title {
+  font-size: 18px;
+  line-height: 52px;
+  padding-left: 16px;
+}
+.info__title--large {
+  line-height: 58px;
+}
+
+.field {
+  padding-left: 6px;
+}
+.field__title {
+  margin-top: 20px;
+  font-weight: 700;
+}
+.field__title--first {
+  margin-top: 10px;
+}
+.field__title--no-indent {
+  margin: 0;
+  padding: 0;
+}
+.field__description {
+  line-height: 20px;
+  padding-top: 6px;
+}
+.field__description--no-indent {
+  margin: 0;
+  padding: 0;
+}
+
+.table {
+  width: 100%;
+  cursor: pointer;
+  background-color: #fcfcff;
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 3px #e7e8f0;
+  border-radius: 2px;
+}
+.table__col-names {
+  background-color: #f2f3fe;
+}
+.table__cell {
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #eaebf2;
+  transition: color 0.4s, background-color 0.4s;
+}
+.table__cell:hover {
+  background-color: #d6f9c8;
+}
+.table__cell:focus {
+  color: #fff;
+  background-color: #0fa094;
+}
+.table__row:first-child .table__cell:first-child {
+  border-top-left-radius: 2px;
+}
+.table__row:first-child .table__cell:last-child {
+  border-top-right-radius: 2px;
+}
+.table__row:last-child .table__cell:first-child {
+  border-bottom-left-radius: 2px;
+}
+.table__row:last-child .table__cell:last-child {
+  border-bottom-right-radius: 2px;
+}
+
+.equipment-info__table-container {
+  margin: 10px;
+}
+.equipment-info__field {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .equipment-info__field {
+    margin-left: 70px;
+  }
+}
+.equipment-info__total-title {
+  margin: 0;
+}
+.equipment-info__total-value {
+  padding: 0;
+}
+
+.footer__field {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 20px;
+  padding-left: 0;
+  font-family: "Roboto", sans-serif;
+}
+.footer__title {
+  margin: 0;
+  color: #838383;
+  font-weight: 400;
+}
+.footer__title--underline {
+  text-decoration: underline 3px;
+}
+.footer__description {
+  padding: 0;
+}
+
+.terms-and-conditions__description {
+  margin-top: 10px;
+}
+.terms-and-conditions__text {
+  margin-top: 20px;
+  padding-left: 6px;
+}
+.terms-and-conditions__text:first-of-type {
+  margin-top: 0;
+}
+.terms-and-conditions__text--underline {
+  font-weight: 700;
+  text-decoration: underline 2px;
+}
+.terms-and-conditions__text--no-indent {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

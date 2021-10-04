@@ -1,0 +1,23 @@
+.footer {
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 20px;
+    padding-left: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &__title {
+    margin: 0;
+    color: #838383;
+    font-weight: 400;
+  }
+
+  &__title--underline {
+    text-decoration: underline 3px;
+  }
+
+  &__description {
+    padding: 0;
+  }
+}

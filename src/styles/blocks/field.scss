@@ -1,0 +1,27 @@
+.field {
+  padding-left: 6px;
+
+  &__title {
+    margin-top: 20px;
+    font-weight: 700;
+
+    &--first {
+      margin-top: 10px;
+    }
+
+    &--no-indent {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__description {
+    line-height: 20px;
+    padding-top: 6px;
+
+    &--no-indent {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

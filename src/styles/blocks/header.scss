@@ -1,0 +1,47 @@
+.header {
+  margin: 0;
+
+  &__container {
+    height: 150px;
+    display: flex;
+  }
+
+  &__left-side-block {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    background-color: $primary-color;
+  }
+
+  &__title {
+    display: block;
+    margin: 20px auto 0;
+    max-width: 400px;
+    font-family: 'MazzardH', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: $title-color;
+
+    @include on-tablet {
+      max-width: none;
+      margin-top: 90px;
+    }
+
+    &--secondary {
+      font-size: 30px;
+    }
+  }
+
+  &__right-side-block {
+    width: 150px;
+
+    text-align: center;
+    background-color: $secondary-color;
+  }
+
+  &__bottom-block {
+    height: 16px;
+    background-color: #e81733;
+  }
+}

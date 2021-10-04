@@ -1,0 +1,23 @@
+.general-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include on-tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__section {
+    flex-grow: 1;
+
+    &:nth-child(2) {
+      margin-top: 20px;
+
+      @include on-tablet {
+        margin-top: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}

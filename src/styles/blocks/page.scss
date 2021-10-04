@@ -1,0 +1,14 @@
+.page {
+  &__main-content,
+  &__footer {
+    margin: 0 20px;
+
+    @include on-tablet {
+      margin: 0 35px;
+    }
+
+    @include on-desktop {
+      margin: 0 50px;
+    }
+  }
+}

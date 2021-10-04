@@ -1,0 +1,14 @@
+.info {
+  color: $title-color;
+  background: linear-gradient(to right, $primary-color, $primary-color 50%, $title-color 100%);
+
+  &__title {
+    font-size: 18px;
+    line-height: 52px;
+    padding-left: 16px;
+
+    &--large {
+      line-height: 58px;
+    }
+  }
+}
