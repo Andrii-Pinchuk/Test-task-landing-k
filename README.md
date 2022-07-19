@@ -2,7 +2,7 @@
 - [Link](https://andrii-pinchuk.github.io/Test-task-landing-k/)
 
 ## Test task:
-- Create layout from .pdf file.
+- Create layout from .pdf file Cyril-Edlington-06-20-2021. Path inside project: ./Cyril-Edlington-06-20-2021.pdf
 
 ## Local environment set up:
 1. Clone repo from GitHub
